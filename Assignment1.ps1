@@ -52,7 +52,8 @@ Write-Host $z
 ## YOUR CODE HERE
 
 $str = "The value of z is: "
-Write-Host $str + $z
+$str_output = $str + $z
+Write-Host $str_output
 
 
 
