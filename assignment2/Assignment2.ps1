@@ -124,3 +124,7 @@ function crackLogin($username, $commonPasswordsList)
 # YOUR CODE BELOW HERE 
 
 $result = crackLogin $username $commonPasswords
+# print the result to the console
+Write-Host $result
+
+Read-Host -Prompt "Press Enter to exit"
