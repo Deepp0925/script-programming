@@ -142,7 +142,7 @@ function logSearcher($dir,$text,$showLogs)
 ## You can change showLogs to $false after you confirm your findings if you like
 ## HINT: Number of findings should show 254
 ## YOUR CODE BELOW HERE
-$results1 = logSearcher -dir ".\Logs\*" -text "tonystark" -showLogs $True
+$results1 = logSearcher -dir ".\Logs\*" -text "tonystark" -showLogs $False
 
 
 
@@ -153,7 +153,7 @@ $results1 = logSearcher -dir ".\Logs\*" -text "tonystark" -showLogs $True
 ## - Just like #4, Search for the string "csv" in your second argument.
 ## Number of findings should show 5
 ## YOUR CODE BELOW HERE
-$results2 = logSearcher -dir ".\Logs\*" -text "csv" -showLogs $True
+$results2 = logSearcher -dir ".\Logs\*" -text "csv" -showLogs $False
 
 
 ## 6. Yikes, let's find out if those files have any sensitive data. Instead of scanning the Logs folder
@@ -163,7 +163,7 @@ $results2 = logSearcher -dir ".\Logs\*" -text "csv" -showLogs $True
 ## - SSN pattern in 123-12-1234 format
 ## - HINT: Look at lecture slides or class lecture demos for examples on patterns.
 ## YOUR CODE BELOW HERE
-$ssnResults = logSearcher -dir ".\Data\*" -text "\d{3}-\d{2}-\d{4}" -showLogs $True
+$ssnResults = logSearcher -dir ".\Data\*" -text "\d{3}-\d{2}-\d{4}" -showLogs $False
 
 
 
@@ -173,7 +173,7 @@ $ssnResults = logSearcher -dir ".\Data\*" -text "\d{3}-\d{2}-\d{4}" -showLogs $T
 ## - Just like #5, execute logSearcher function again this time to see how many Credit Card patterns were found.
 ## - Credit Cards pattern will be in 16 digit format with no dashes(-). Example 1234123412341234
 ## YOUR CODE BELOW HERE
-$ccResults = logSearcher -dir ".\Data\*" -text "\d{16}" -showLogs $True
+$ccResults = logSearcher -dir ".\Data\*" -text "\d{16}" -showLogs $False
 
 
 
