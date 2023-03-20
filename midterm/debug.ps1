@@ -14,4 +14,4 @@ function get-systemInfo ()
 
 }
 
-get-systemInformation 
+get-systemInfo
